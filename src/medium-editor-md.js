@@ -11,6 +11,10 @@
  *
  * @param {Function} callback The callback function that is called with the markdown code (first argument).
  */
+ 
+//include markdown for compatibility with REACT
+var toMarkdown = require("to-markdown"); 
+ 
 module.exports = function (options, callback) {
 
     if (typeof options === "function") {
